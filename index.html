@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        font-family:'Courier New', Courier, monospace;
+        background-color:lightcyan;
+    }
+    .gf{
+        display:flex;
+        width:100%;
+        height: auto;
+        flex-direction: row;
+    }
+    .m{
+        text-indent: 120px;
+        text-align: center;
+        width: 600px;
+        height: 400px;
+    }
+    .img{
+        float: right;
+        width:800px;
+        height:800px;
+        margin:20px;
+        padding:20px;
+    }
+    .ib{
+        float: left;
+        width:500px;
+        height:500px;
+        margin:20px;
+        padding:20px;
+     }
+    input[type="text"],input[type="datetime-local"]{
+    font-size: 15px;
+        border-bottom: 2px solid gray;
+        border:none;
+        width:100%;
+        margin:20px;
+        padding:20px;
+    }
+    topnav{
+        list-style-type: none;
+        margin: 0px;
+        padding:0px;
+    }
+    topnav li{
+        color:orangered;
+        text-decoration: none;
+        display:inline-block;
+        padding:20px;
+        float:right;
+        }
+        topnav li:hover{
+            transition: 0.5s ease;
+    
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+        }
+        button{
+            color:lightslategrey;
+            border:1px solid lightyellow;
+            border-radius: 6px;
+        }
+        button :hover{
+            background-color: mediumturquoise;
+        }
+    </style>
+    </head>
+    <body>
+        <topnav>
+            <topnav li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </topnav>
+        </topnav>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/1200px-RedDot_Burger.jpg"
+        alt="burger"style="height:800px;width:800px;margin-left:auto;  margin-right:auto; display:block;" > 
+<div class="gf">
+    <div class="ib">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj_QsErF0SoDCjQT65YGb4ZDJ3xQRlY787mg&usqp=CAU"
+        alt="burger" width="100%" height="100%">
+</div>
+<div class="m k" id="about">
+<h2 >About Catering</h2>
+<p>Tradition since 1889</p>
+<p>
+        The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, <br>
+        consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+        Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+<p>
+        Excepteur sint occaecat cupidatat non proident, <br>
+        sunt in culpa qui officia deserunt mollit anim id est laborum<br>
+        consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore<br>
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br>
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
+<div class="gf">
+  <div class="m">
+    <h2 style="text-align: center;" id="menu">Our Menu</h2>
+    <h2 ><b>Bread Basket</b></h2>
+    <p >Assortment of fresh baked fruit breads and muffins 5.5</p>
+    <h2 ><b>Honey Almond Granola with Fruits</b></h2>
+    <p >Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+    <h2 ><b>Belgian Waffle</b></h2>
+    <p >Vanilla flavored batter with malted flour 7.50</p>
+    <h2 ><b> Scrambled eggs</b></h2>
+    <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+    <h2><b>Blueberry Pancakes</b></h2>
+    <p >With syrup, butter and lots of berries 8.50</p>
+  </div>
+ <div class="img">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/d1/88/62/20170709-004023-largejpg.jpg" alt="burger">
+</div>
+</div>
+<h2 style="text-align: center;"  id="contact"><b>Contact</b></h2>
+<div class="k">
+<p>
+    We offer full-service catering for any event, large or small.We understand your needs and we will cater the food to satisfy the biggerst criteria of them all,both look and taste.
+    Do not hesitate to contact us.
+    </p>
+    <p style="color:cadetblue">Catering Service, 42nd Living St, 43043 New York, NY</p>
+    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+    </div>
+    <div class="form">
+    <form action="/action_page.PHP">
+        <label for="name"></label>
+        <input type="text" id="name" name="Name" placeholder="Name"><br>
+        <label for="how"></label>
+        <input type="number" id="how" name="how many peopele" placeholder="How many people"/><br>
+        <label for ="datetime-local"></label>
+        <input type="datetime-local" id="datetime-local" name="datetime-local" placeholder="16-11-2020 08.00PM"><br>
+        <label for="mess" ></label>
+        <input type="text" id="mes" name="mes" placeholder="Message\Special requirements"><br><br>
+        <button>SEND Message</button>
+    </form>
+
+</div>
+    </body>
+</html>
